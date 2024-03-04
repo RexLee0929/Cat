@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - 友爱</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <li><a href="index.html";>友爱流浪猫救助系统</a></li>
+            </div>
+        </nav>
+    </header>
+    <div class="login-container">
+        <h2 class="login-title">注册</h2>
+        <form id="registerForm">
+            <input type="text" placeholder="用户名" name="username" required>
+            <input type="email" placeholder="邮箱" name="email" required>
+            <input type="password" placeholder="密码" name="password" required>
+            <input type="password" placeholder="确认密码" name="confirmPassword" required>
+            <button type="submit">注册</button>
+            <div class="button-left">
+                <button type="button" class="button-acc" onclick="location.href='login.html';">登陆</button>
+            </div>
+            <div class="button-left">
+                <button type="button" class="button-acc" onclick="location.href='resetpwd.html';">重置</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+</html>

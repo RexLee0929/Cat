@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理员后台 - 友爱流浪猫救助系统</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <ul class="sidebar-nav">
+            <li class="nav-item" onclick="showSection('review-section')">审核</li>
+            <li class="nav-item" onclick="showSection('user-management')">用户管理</li>
+            <li class="nav-item" onclick="showSection('rescue-tasks')">救助任务</li>
+        </ul>
+    </aside>
+    <main class="content">
+        <section id="review-section" class="content-section">
+            <div>救助审核</div>
+            <div>志愿者审核</div>
+            <div>领养审核</div>
+        </section>
+        <section id="user-management" class="content-section">
+            <!-- 用户管理内容 -->
+        </section>
+        <section id="rescue-tasks" class="content-section">
+            <!-- 救助任务内容 -->
+        </section>
+    </main>
+    <script src="admin.js"></script>
+</body>
+</html>

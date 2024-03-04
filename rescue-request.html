@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提交救助请求 - 友爱</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <li><a href="index.html">友爱流浪猫救助系统</a></li>
+            </div>
+        </nav>
+    </header>
+    <div class="vol-container">
+        <h2 class="vol-title">提交救助请求</h2>
+        <form id="rescueRequestForm">   
+            <!-- 救助动物信息 -->
+            <textarea placeholder="需要被救助动物的信息" name="animalInfo" rows="2" required></textarea>
+            <input type="number" placeholder="待救助的数量" name="animalCount" required>
+            <textarea placeholder="它们的状态" name="animalStatus" rows="2" required></textarea>
+            <textarea placeholder="需要被救助的动物的详细地址" name="rescueAddress" rows="2" required></textarea>
+            
+            <!-- 申请人的信息 -->
+            <input type="text" placeholder="申请人姓名" name="applicantName" required>
+            <select name="applicantGender" required>
+                <option value="" disabled selected>性别</option>
+                <option value="male">男</option>
+                <option value="female">女</option>
+            </select>
+            <input type="tel" placeholder="手机号" name="applicantPhone" required>
+            <input type="text" placeholder="所在城市" name="applicantCity" required>
+
+            <!-- 提交证明信息 -->
+            <input type="url" placeholder="图片链接" name="proofImage" required>
+            <input type="url" placeholder="视频链接" name="proofVideo" required>
+
+            <button type="submit">提交申请</button>
+        </form>
+    </div>
+    <script src="js/rescue-request.js"></script>
+</body>
+</html>

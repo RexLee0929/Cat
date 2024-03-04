@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成为志愿者 - 友爱</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <li><a href="index.html";>友爱流浪猫救助系统</a></li>
+            </div>
+        </nav>
+    </header>
+    <div class="vol-container">
+        <h2 class="vol-title">志愿者申请</h2>
+        <form id="volunteerApplicationForm">
+            <input type="text" placeholder="姓名" name="name" required>
+            <select name="gender" required>
+                <option value="none" disabled selected>性别</option>
+                <option value="male">男</option>
+                <option value="female">女</option>
+            </select>
+            <input type="date" placeholder="出生日期" name="birthdate" required>
+            <input type="text" placeholder="所在城市" name="city" required>
+            <input type="tel" placeholder="手机号" name="phone" required>
+            <textarea placeholder="申请理由" name="reason" rows="4" required></textarea>
+            <button type="submit">提交申请</button>
+        </form>
+    </div>
+    <script src="js/vlount-application.js"></script>
+</body>
+</html>
